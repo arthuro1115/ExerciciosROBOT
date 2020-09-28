@@ -1,120 +1,558 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200920 17:28:47.009" rpa="false">
-<suite id="s1" name="Ts Ex2" source="C:\Users\Arthuro\Desktop\IB\AULA_IBM\TESTSUITE\ts_ex2.robot">
-<test id="s1-t1" name="Acessar">
-<kw name="Acessar Robotizando" library="function_ex2">
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200927 18:46:47.840" rpa="false">
+<suite id="s1" name="Ts Ex6" source="C:\Users\Arthuro\Desktop\IB\AULA_IBM\TESTSUITE\ts_ex6.robot">
+<test id="s1-t1" name="Entrar No Site">
+<kw name="Login" library="function_ex6">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20200920 17:28:47.325" level="INFO">Opening browser 'chrome' to base url 'http://robotizandotestes.blogspot.com/'.</msg>
-<status status="PASS" starttime="20200920 17:28:47.325" endtime="20200920 17:28:53.556"></status>
+<msg timestamp="20200927 18:46:48.207" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20200927 18:46:48.206" endtime="20200927 18:46:56.159"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200920 17:28:53.557" endtime="20200920 17:28:55.740"></status>
+<status status="PASS" starttime="20200927 18:46:56.160" endtime="20200927 18:46:58.316"></status>
 </kw>
-<status status="PASS" starttime="20200920 17:28:47.324" endtime="20200920 17:28:55.740"></status>
+<status status="PASS" starttime="20200927 18:46:48.206" endtime="20200927 18:46:58.316"></status>
 </kw>
-<status status="PASS" starttime="20200920 17:28:47.324" endtime="20200920 17:28:55.743" critical="yes"></status>
+<status status="PASS" starttime="20200927 18:46:48.205" endtime="20200927 18:46:58.317" critical="yes"></status>
 </test>
-<test id="s1-t2" name="Clicar No Botao de pesquisa">
-<kw name="Pesquisar" library="function_ex2">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
+<test id="s1-t2" name="Pesquisar Roupa">
+<kw name="Pesquisar" library="function_ex6">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
 <arguments>
 <arg>${SEARCHBUTTON}</arg>
 </arguments>
-<status status="PASS" starttime="20200920 17:28:55.752" endtime="20200920 17:28:55.788"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${SEARCHBUTTON}</arg>
-</arguments>
-<msg timestamp="20200920 17:28:55.789" level="INFO">Clicking element 'css=.search-expand.touch-icon-button'.</msg>
-<status status="PASS" starttime="20200920 17:28:55.789" endtime="20200920 17:28:55.840"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>${INPUTTEXT}</arg>
-</arguments>
-<status status="PASS" starttime="20200920 17:28:55.840" endtime="20200920 17:28:55.878"></status>
+<status status="PASS" starttime="20200927 18:46:58.325" endtime="20200927 18:46:58.346"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <arguments>
-<arg>${INPUTTEXT}</arg>
-<arg>${SEARCHTEXT}</arg>
+<arg>${TEXTBOXSEARCH}</arg>
+<arg>${TEXTSEARCH}</arg>
 </arguments>
-<msg timestamp="20200920 17:28:55.879" level="INFO">Typing text 'season premiere' into text field '//*[@id="BlogSearch1"]/div/form/div/input'.</msg>
-<status status="PASS" starttime="20200920 17:28:55.879" endtime="20200920 17:28:55.987"></status>
+<msg timestamp="20200927 18:46:58.347" level="INFO">Typing text 'FADED SHORT SLEEVE T-SHIRTS' into text field '//*[@id="search_query_top"]'.</msg>
+<status status="PASS" starttime="20200927 18:46:58.346" endtime="20200927 18:46:58.521"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>${CLICKBUTTON}</arg>
+<arg>${SEARCHBUTTON}</arg>
 </arguments>
-<msg timestamp="20200920 17:28:55.987" level="INFO">Clicking element '//*[@id="BlogSearch1"]/div/form/input'.</msg>
-<status status="PASS" starttime="20200920 17:28:55.987" endtime="20200920 17:28:57.437"></status>
+<msg timestamp="20200927 18:46:58.522" level="INFO">Clicking element '//*[@id="searchbox"]/button'.</msg>
+<status status="PASS" starttime="20200927 18:46:58.521" endtime="20200927 18:46:59.829"></status>
 </kw>
-<status status="PASS" starttime="20200920 17:28:55.752" endtime="20200920 17:28:57.437"></status>
+<status status="PASS" starttime="20200927 18:46:58.325" endtime="20200927 18:46:59.830"></status>
 </kw>
-<status status="PASS" starttime="20200920 17:28:55.749" endtime="20200920 17:28:57.438" critical="yes"></status>
+<status status="PASS" starttime="20200927 18:46:58.324" endtime="20200927 18:46:59.831" critical="yes"></status>
 </test>
-<test id="s1-t3" name="Clicar No Post">
-<kw name="Post" library="function_ex2">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
+<test id="s1-t3" name="Clicar Na Roupa">
+<kw name="Click Roupa" library="function_ex6">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
 <arguments>
-<arg>${POST}</arg>
+<arg>${ROUPA}</arg>
 </arguments>
-<status status="PASS" starttime="20200920 17:28:57.441" endtime="20200920 17:28:57.472"></status>
+<status status="PASS" starttime="20200927 18:46:59.834" endtime="20200927 18:46:59.862"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>${POST}</arg>
+<arg>${ROUPA}</arg>
 </arguments>
-<msg timestamp="20200920 17:28:57.473" level="INFO">Clicking element '//*[@id="Blog1"]/div/article/div/div/h3/a'.</msg>
-<status status="PASS" starttime="20200920 17:28:57.472" endtime="20200920 17:28:59.205"></status>
+<msg timestamp="20200927 18:46:59.863" level="INFO">Clicking element '//*[@id="center_column"]/ul/li/div/div[2]/h5/a'.</msg>
+<status status="PASS" starttime="20200927 18:46:59.862" endtime="20200927 18:47:01.500"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:46:59.834" endtime="20200927 18:47:01.500"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:46:59.833" endtime="20200927 18:47:01.501" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Adicionar Roupa Ao Carrinho">
+<kw name="Adicionar Roupa" library="function_ex6">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ADDCART}</arg>
+</arguments>
+<status status="PASS" starttime="20200927 18:47:01.504" endtime="20200927 18:47:01.535"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADDCART}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:01.535" level="INFO">Clicking element '//*[@id="add_to_cart"]/button'.</msg>
+<status status="PASS" starttime="20200927 18:47:01.535" endtime="20200927 18:47:01.608"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20200920 17:29:04.219" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200920 17:28:59.205" endtime="20200920 17:29:04.219"></status>
+<msg timestamp="20200927 18:47:06.609" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200927 18:47:01.608" endtime="20200927 18:47:06.609"></status>
 </kw>
-<status status="PASS" starttime="20200920 17:28:57.441" endtime="20200920 17:29:04.219"></status>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${CHECKOUTBUTTON}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:06.611" level="INFO">Clicking element '//*[@class="btn btn-default button button-medium"]'.</msg>
+<status status="PASS" starttime="20200927 18:47:06.610" endtime="20200927 18:47:08.601"></status>
 </kw>
-<status status="PASS" starttime="20200920 17:28:57.440" endtime="20200920 17:29:04.221" critical="yes"></status>
+<status status="PASS" starttime="20200927 18:47:01.503" endtime="20200927 18:47:08.602"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:01.502" endtime="20200927 18:47:08.602" critical="yes"></status>
 </test>
-<test id="s1-t4" name="Fechar Browser">
-<kw name="Fechar" library="function_ex2">
+<test id="s1-t5" name="Comprar Roupa">
+<kw name="Comprar Roupa" library="function_ex6">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ADDROUPA}</arg>
+</arguments>
+<status status="PASS" starttime="20200927 18:47:08.613" endtime="20200927 18:47:08.634"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADDROUPA}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:08.635" level="INFO">Clicking element '//*[@id="cart_quantity_up_1_1_0_0"]'.</msg>
+<status status="PASS" starttime="20200927 18:47:08.634" endtime="20200927 18:47:08.752"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200927 18:47:09.768" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200927 18:47:08.753" endtime="20200927 18:47:09.768"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:08.612" endtime="20200927 18:47:09.768"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:08.611" endtime="20200927 18:47:09.769" critical="yes"></status>
+</test>
+<test id="s1-t6" name="Conferir o Valor">
+<kw name="Verifica Saldo" library="function_ex6">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Verifica Valor Total da Compra</arg>
+</arguments>
+<assign>
+<var>${VERIFICAVALORTOTAL}</var>
+</assign>
+<kw name="Verifica Valor Total da Compra" library="function_ex6">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${LIXEIRA}</arg>
+<arg>timeout=60.0</arg>
+</arguments>
+<status status="PASS" starttime="20200927 18:47:09.777" endtime="20200927 18:47:09.791"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${VALOR}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200927 18:47:10.214" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-60.png"&gt;&lt;img src="selenium-screenshot-60.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200927 18:47:09.816" endtime="20200927 18:47:10.215"></status>
+</kw>
+<msg timestamp="20200927 18:47:10.217" level="FAIL">Page should have contained element '//*[@id="total_price"]//..//*[contains(text(),'$84.55')]' but did not.</msg>
+<status status="FAIL" starttime="20200927 18:47:09.791" endtime="20200927 18:47:10.217"></status>
+</kw>
+<status status="FAIL" starttime="20200927 18:47:09.777" endtime="20200927 18:47:10.218"></status>
+</kw>
+<msg timestamp="20200927 18:47:10.218" level="INFO">${VERIFICAVALORTOTAL} = False</msg>
+<status status="PASS" starttime="20200927 18:47:09.777" endtime="20200927 18:47:10.218"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${VERIFICAVALORTOTAL}'=='True'</arg>
+<arg>Run Keywords</arg>
+<arg>Capture Page Screenshot</arg>
+<arg>AND</arg>
+<arg>Log To Console</arg>
+<arg>Saldo Suficiente!</arg>
+<arg>ELSE</arg>
+<arg>Run Keywords</arg>
+<arg>Capture Page Screenshot</arg>
+<arg>AND</arg>
+<arg>Log To Console</arg>
+<arg>Saldo Insuficiente!</arg>
+<arg>AND</arg>
+<arg>Compra ate 5</arg>
+</arguments>
+<kw name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>AND</arg>
+<arg>Log To Console</arg>
+<arg>Saldo Insuficiente!</arg>
+<arg>AND</arg>
+<arg>Compra ate 5</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200927 18:47:10.598" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-61.png"&gt;&lt;img src="selenium-screenshot-61.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200927 18:47:10.219" endtime="20200927 18:47:10.599"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Saldo Insuficiente!</arg>
+</arguments>
+<status status="PASS" starttime="20200927 18:47:10.599" endtime="20200927 18:47:10.600"></status>
+</kw>
+<kw name="Compra ate 5" library="function_ex6">
+<kw name="${INDEX} IN RANGE [ 2 | 5 ]" type="for">
+<kw name="${INDEX} = 2" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADDROUPA}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:10.602" level="INFO">Clicking element '//*[@id="cart_quantity_up_1_1_0_0"]'.</msg>
+<status status="PASS" starttime="20200927 18:47:10.601" endtime="20200927 18:47:10.644"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:10.601" endtime="20200927 18:47:10.644"></status>
+</kw>
+<kw name="${INDEX} = 3" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADDROUPA}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:10.646" level="INFO">Clicking element '//*[@id="cart_quantity_up_1_1_0_0"]'.</msg>
+<status status="PASS" starttime="20200927 18:47:10.645" endtime="20200927 18:47:10.693"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:10.644" endtime="20200927 18:47:10.693"></status>
+</kw>
+<kw name="${INDEX} = 4" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADDROUPA}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:10.693" level="INFO">Clicking element '//*[@id="cart_quantity_up_1_1_0_0"]'.</msg>
+<status status="PASS" starttime="20200927 18:47:10.693" endtime="20200927 18:47:10.726"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:10.693" endtime="20200927 18:47:10.727"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:10.601" endtime="20200927 18:47:10.727"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200927 18:47:13.738" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200927 18:47:10.727" endtime="20200927 18:47:13.738"></status>
+</kw>
+<kw name="Verifica Saldo" library="function_ex6">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Verifica Valor Total da Compra</arg>
+</arguments>
+<assign>
+<var>${VERIFICAVALORTOTAL}</var>
+</assign>
+<kw name="Verifica Valor Total da Compra" library="function_ex6">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${LIXEIRA}</arg>
+<arg>timeout=60.0</arg>
+</arguments>
+<status status="PASS" starttime="20200927 18:47:13.739" endtime="20200927 18:47:13.748"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${VALOR}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:13.757" level="INFO">Current page contains element '//*[@id="total_price"]//..//*[contains(text(),'$84.55')]'.</msg>
+<status status="PASS" starttime="20200927 18:47:13.748" endtime="20200927 18:47:13.757"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:13.739" endtime="20200927 18:47:13.757"></status>
+</kw>
+<msg timestamp="20200927 18:47:13.757" level="INFO">${VERIFICAVALORTOTAL} = True</msg>
+<status status="PASS" starttime="20200927 18:47:13.739" endtime="20200927 18:47:13.757"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${VERIFICAVALORTOTAL}'=='True'</arg>
+<arg>Run Keywords</arg>
+<arg>Capture Page Screenshot</arg>
+<arg>AND</arg>
+<arg>Log To Console</arg>
+<arg>Saldo Suficiente!</arg>
+<arg>ELSE</arg>
+<arg>Run Keywords</arg>
+<arg>Capture Page Screenshot</arg>
+<arg>AND</arg>
+<arg>Log To Console</arg>
+<arg>Saldo Insuficiente!</arg>
+<arg>AND</arg>
+<arg>Compra ate 5</arg>
+</arguments>
+<kw name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>AND</arg>
+<arg>Log To Console</arg>
+<arg>Saldo Suficiente!</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200927 18:47:14.153" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-62.png"&gt;&lt;img src="selenium-screenshot-62.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200927 18:47:13.758" endtime="20200927 18:47:14.153"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Saldo Suficiente!</arg>
+</arguments>
+<status status="PASS" starttime="20200927 18:47:14.153" endtime="20200927 18:47:14.154"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:13.758" endtime="20200927 18:47:14.154"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:13.758" endtime="20200927 18:47:14.154"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:13.738" endtime="20200927 18:47:14.154"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:10.600" endtime="20200927 18:47:14.154"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:10.219" endtime="20200927 18:47:14.154"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:10.218" endtime="20200927 18:47:14.155"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:09.776" endtime="20200927 18:47:14.155"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:09.775" endtime="20200927 18:47:14.155" critical="yes"></status>
+</test>
+<test id="s1-t7" name="Comprar Mais">
+<kw name="Continue Comprando" library="function_ex6">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${CONTINUEBUTTOM}</arg>
+</arguments>
+<status status="PASS" starttime="20200927 18:47:14.174" endtime="20200927 18:47:14.190"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${CONTINUEBUTTOM}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:14.190" level="INFO">Clicking element '//*[@id="center_column"]/p[2]/a[2]'.</msg>
+<status status="PASS" starttime="20200927 18:47:14.190" endtime="20200927 18:47:15.578"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200927 18:47:20.590" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200927 18:47:15.578" endtime="20200927 18:47:20.590"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:14.172" endtime="20200927 18:47:20.590"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:14.171" endtime="20200927 18:47:20.591" critical="yes"></status>
+</test>
+<test id="s1-t8" name="Pesquisar Roupa 2">
+<kw name="Pesquisando Roupa 2" library="function_ex6">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${SEARCHBUTTON}</arg>
+</arguments>
+<status status="PASS" starttime="20200927 18:47:20.600" endtime="20200927 18:47:20.616"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${TEXTBOXSEARCH}</arg>
+<arg>${TEXTSEARCH2}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:20.616" level="INFO">Typing text 'blouse' into text field '//*[@id="search_query_top"]'.</msg>
+<status status="PASS" starttime="20200927 18:47:20.616" endtime="20200927 18:47:20.757"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SEARCHBUTTON}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:20.758" level="INFO">Clicking element '//*[@id="searchbox"]/button'.</msg>
+<status status="PASS" starttime="20200927 18:47:20.757" endtime="20200927 18:47:26.222"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:20.599" endtime="20200927 18:47:26.222"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:20.598" endtime="20200927 18:47:26.223" critical="yes"></status>
+</test>
+<test id="s1-t9" name="Clicando na Roupa 2">
+<kw name="Click Roupa 2" library="function_ex6">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ROUPA2}</arg>
+</arguments>
+<status status="PASS" starttime="20200927 18:47:26.236" endtime="20200927 18:47:26.254"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ROUPA2}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:26.255" level="INFO">Clicking element '//*[@id="center_column"]/ul/li/div/div[1]/div/a[1]/img'.</msg>
+<status status="PASS" starttime="20200927 18:47:26.254" endtime="20200927 18:47:28.540"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200927 18:47:30.549" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200927 18:47:28.540" endtime="20200927 18:47:30.549"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:26.236" endtime="20200927 18:47:30.549"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:26.235" endtime="20200927 18:47:30.550" critical="yes"></status>
+</test>
+<test id="s1-t10" name="Adicionar Roupa Ao Carrinho 2">
+<kw name="Adicionar Roupa 2" library="function_ex6">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ADDCART}</arg>
+</arguments>
+<status status="PASS" starttime="20200927 18:47:30.558" endtime="20200927 18:47:30.574"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADDCART}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:30.574" level="INFO">Clicking element '//*[@id="add_to_cart"]/button'.</msg>
+<status status="PASS" starttime="20200927 18:47:30.574" endtime="20200927 18:47:30.647"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200927 18:47:35.650" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200927 18:47:30.648" endtime="20200927 18:47:35.650"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${CHECKOUTBUTTON}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:35.651" level="INFO">Clicking element '//*[@class="btn btn-default button button-medium"]'.</msg>
+<status status="PASS" starttime="20200927 18:47:35.650" endtime="20200927 18:47:37.305"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200927 18:47:39.310" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200927 18:47:37.305" endtime="20200927 18:47:39.310"></status>
+</kw>
+<kw name="Compra ate 3" library="function_ex6">
+<kw name="${INDEX2} IN RANGE [ 1 | 3 ]" type="for">
+<kw name="${INDEX2} = 1" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADDROUPA2}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:39.311" level="INFO">Clicking element '//*[@id="cart_quantity_up_2_7_0_0"]/span/i'.</msg>
+<status status="PASS" starttime="20200927 18:47:39.311" endtime="20200927 18:47:39.385"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:39.311" endtime="20200927 18:47:39.385"></status>
+</kw>
+<kw name="${INDEX2} = 2" type="foritem">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADDROUPA2}</arg>
+</arguments>
+<msg timestamp="20200927 18:47:39.386" level="INFO">Clicking element '//*[@id="cart_quantity_up_2_7_0_0"]/span/i'.</msg>
+<status status="PASS" starttime="20200927 18:47:39.385" endtime="20200927 18:47:39.436"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:39.385" endtime="20200927 18:47:39.436"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:39.311" endtime="20200927 18:47:39.436"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200927 18:47:42.444" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200927 18:47:39.436" endtime="20200927 18:47:42.444"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:39.310" endtime="20200927 18:47:42.444"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:30.558" endtime="20200927 18:47:42.444"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:30.557" endtime="20200927 18:47:42.445" critical="yes"></status>
+</test>
+<test id="s1-t11" name="Print Final da tela">
+<kw name="Print tela" library="function_ex6">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200927 18:47:42.863" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-63.png"&gt;&lt;img src="selenium-screenshot-63.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200927 18:47:42.454" endtime="20200927 18:47:42.863"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200927 18:47:44.869" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200927 18:47:42.864" endtime="20200927 18:47:44.869"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:42.453" endtime="20200927 18:47:44.869"></status>
+</kw>
+<status status="PASS" starttime="20200927 18:47:42.452" endtime="20200927 18:47:44.870" critical="yes"></status>
+</test>
+<test id="s1-t12" name="Fechar Navegador">
+<kw name="Fechar" library="function_ex6">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200920 17:29:04.231" endtime="20200920 17:29:06.484"></status>
+<status status="PASS" starttime="20200927 18:47:44.873" endtime="20200927 18:47:47.187"></status>
 </kw>
-<status status="PASS" starttime="20200920 17:29:04.230" endtime="20200920 17:29:06.485"></status>
+<status status="PASS" starttime="20200927 18:47:44.873" endtime="20200927 18:47:47.187"></status>
 </kw>
-<status status="PASS" starttime="20200920 17:29:04.229" endtime="20200920 17:29:06.486" critical="yes"></status>
+<status status="PASS" starttime="20200927 18:47:44.872" endtime="20200927 18:47:47.188" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200920 17:28:47.012" endtime="20200920 17:29:06.496"></status>
+<status status="PASS" starttime="20200927 18:46:47.843" endtime="20200927 18:47:47.196"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0">Critical Tests</stat>
-<stat pass="4" fail="0">All Tests</stat>
+<stat pass="12" fail="0">Critical Tests</stat>
+<stat pass="12" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="4" fail="0" id="s1" name="Ts Ex2">Ts Ex2</stat>
+<stat pass="12" fail="0" id="s1" name="Ts Ex6">Ts Ex6</stat>
 </suite>
 </statistics>
 <errors>
