@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200930 20:16:26.004" rpa="false">
+<suite id="s1" name="Ts Av1" source="C:\Users\Arthuro\Desktop\IB\AULA_IBM\TESTSUITE\ts_av1.robot">
+<test id="s1-t1" name="Entrar No Site">
+<kw name="Login" library="function_av1">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200930 20:16:26.318" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200930 20:16:26.322" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200930 20:16:26.322" endtime="20200930 20:16:26.322"></status>
+</kw>
+<msg timestamp="20200930 20:16:26.326" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" starttime="20200930 20:16:26.317" endtime="20200930 20:16:26.326"></status>
+</kw>
+<status status="FAIL" starttime="20200930 20:16:26.316" endtime="20200930 20:16:26.327"></status>
+</kw>
+<status status="FAIL" starttime="20200930 20:16:26.315" endtime="20200930 20:16:26.328" critical="yes">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<test id="s1-t2" name="Pesquisar Roupa">
+<kw name="Pesquisar" library="function_av1">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${SEARCHBUTTON}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200930 20:16:26.339" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200930 20:16:26.339" endtime="20200930 20:16:26.339"></status>
+</kw>
+<msg timestamp="20200930 20:16:26.344" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20200930 20:16:26.339" endtime="20200930 20:16:26.344"></status>
+</kw>
+<status status="FAIL" starttime="20200930 20:16:26.337" endtime="20200930 20:16:26.345"></status>
+</kw>
+<status status="FAIL" starttime="20200930 20:16:26.336" endtime="20200930 20:16:26.345" critical="yes">No browser is open.</status>
+</test>
+<test id="s1-t3" name="Clicar Na Roupa">
+<kw name="Click Roupa" library="function_av1">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ROUPA}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200930 20:16:26.361" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200930 20:16:26.361" endtime="20200930 20:16:26.361"></status>
+</kw>
+<msg timestamp="20200930 20:16:26.363" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20200930 20:16:26.361" endtime="20200930 20:16:26.363"></status>
+</kw>
+<status status="FAIL" starttime="20200930 20:16:26.360" endtime="20200930 20:16:26.363"></status>
+</kw>
+<status status="FAIL" starttime="20200930 20:16:26.359" endtime="20200930 20:16:26.364" critical="yes">No browser is open.</status>
+</test>
+<test id="s1-t4" name="Lista">
+<kw name="Criar Lista" library="function_av1">
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>@{LISTA_COMPRA}</var>
+</assign>
+<msg timestamp="20200930 20:16:26.367" level="INFO">@{LISTA_COMPRA} = [ ]</msg>
+<status status="PASS" starttime="20200930 20:16:26.367" endtime="20200930 20:16:26.367"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${LISTA_COMPRA}</arg>
+</arguments>
+<msg timestamp="20200930 20:16:26.368" level="INFO">${LISTA_COMPRA} = []</msg>
+<status status="PASS" starttime="20200930 20:16:26.367" endtime="20200930 20:16:26.368"></status>
+</kw>
+<status status="PASS" starttime="20200930 20:16:26.367" endtime="20200930 20:16:26.368"></status>
+</kw>
+<status status="PASS" starttime="20200930 20:16:26.366" endtime="20200930 20:16:26.369" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Add Cart">
+<kw name="Adicionar ao carrinho" library="function_av1">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ADDCART}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200930 20:16:26.372" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200930 20:16:26.372" endtime="20200930 20:16:26.372"></status>
+</kw>
+<msg timestamp="20200930 20:16:26.375" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20200930 20:16:26.372" endtime="20200930 20:16:26.376"></status>
+</kw>
+<status status="FAIL" starttime="20200930 20:16:26.371" endtime="20200930 20:16:26.376"></status>
+</kw>
+<status status="FAIL" starttime="20200930 20:16:26.370" endtime="20200930 20:16:26.376" critical="yes">No browser is open.</status>
+</test>
+<status status="FAIL" starttime="20200930 20:16:26.007" endtime="20200930 20:16:26.392"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="4">Critical Tests</stat>
+<stat pass="1" fail="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="4" id="s1" name="Ts Av1">Ts Av1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
